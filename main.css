@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: grey;
+}
+
+.navbar {
+    background: url(img/navbar-bg.png) !important;
+    background-position: center;
+    height: 220px;
+}
+
+.logo {
+    position: absolute;
+    right: 34px;
+    margin-top: -50px;
+    transition-duration: 0.4s;
+    transform: scale(1);
+}
+
+.nav-link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 25px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.52) !important;
+}
+
+.nav-item {
+    padding-left: 100px;
+}
+
+.gallery {
+    padding-left: 70px;
+}
+
+.nav-link:hover {
+    transition: 0.4s;
+    color: #fff !important;
+}
+
+.logo:hover {
+    transition-duration: 0.4s;
+    transform: scale(1.05);
+}
+
+.mobile-logo {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .mobile-logo {
+        display: block;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .nav-item {
+        margin-left: 0;
+        padding-left: 250px;
+        padding-top: 0;
+    }
+
+    .gallery {
+        margin-top: -100px;
+    }
+}
+
+@media (max-width: 1330px) {
+    .navbar {
+        background-position: center !important;
+    }
+
+    .main .container{
+        background-position: center !important;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 522px) {
+    .nav-item {
+        padding-left: 200px;
+    }
+}
+
+@media (max-width: 436px) {
+    
+    .navbar {
+        background-repeat: no-repeat !important;
+        height: 300px;
+        margin-top: -40px;
+    }
+
+
+    .nav-item {
+        padding-left: 50px;
+        margin-top: 0;
+    }
+}
+
+.container {
+    max-width: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 600px;
+    background: url(img/main-bg.png);
+    background-position: center;
+}
+
+.alek {
+    margin-top: 135px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 50px;
+    text-align: center;
+    color: #97E7E7;
+}
+
+.donate-btn {
+    width: 600px;
+    height: 200px;
+    background: #122927;
+    box-shadow: 12px 12px 4px rgba(0, 0, 0, 0.35);
+    border: none;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 75px;
+    text-align: center;
+    color: #97E7E7;
+    margin-top: 146px;
+    border-radius: 10px;
+    transform: scale(1);
+    transition-duration: 0.5s;
+}
+
+.donate-a {
+    text-decoration: unset;
+}
+
+.donate-btn:hover {
+    transform: scale(0.9);
+    transition-duration: 0.5s;
+}
+
+@media (max-width: 605px) {
+    .donate-btn {
+        width: 100%;
+        height: 150px;
+        font-size: 36px;
+    }
+}
+
+.gallery-text {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 41px;
+    margin-top: 250px;
+    color: #97E7E7;   
+
+}    
+
+
+.img-1,
+.img-2,
+.img-3 {
+    max-width: 100%;
+    margin-top: 35px;
+}
+
+.gallery-block {
+    width: 70%;
+}
+
+.load-btn {
+    width: 300px;
+    height: 85px;
+    border-radius: 5px;
+    background: rgba(52, 52, 52, 0.7);
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    margin-top: 93px;
+    transition-duration: 0.5s;
+    transform: scale(1);
+}
+
+.load-btn:hover {
+    transition-duration: 0.5s;
+    transform: scale(1.1)
+}
+
+@media (max-width: 532px) {
+    .load-btn {
+        width: 250px;
+        height: 75px;
+        font-size: 24px;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 394px) {
+    .load-btn {
+        width: 200px;
+        height: 50px;
+        font-size: 18px;
+    }
+}
